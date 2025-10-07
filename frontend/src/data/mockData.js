@@ -107,8 +107,8 @@ export const mockProjects = [
     },
     capacity: "765 MW",
     achievements: {
-      pt: "543.089 módulos fotovoltaicos instalados, 6.064 trackers instalados, 76.140 perfis metálicos cravados. Equivalente a 375 MW de módulos instalados, 254 MW de instalações elétricas.",
-      en: "543,089 Photovoltaic Modules Installed, 6,064 Tracking Structures Installed, 76,140 Metal Piles Driven, Equivalent to 375 MW of modules installed, 254 MW of electrical installations."
+      pt: "543.089 módulos fotovoltaicos instalados, 6.064 trackers instalados, 76.140 perfis metálicos cravados. Equivalente a 375 MW de instalações mecânicas, 254 MW de instalações elétricas.",
+      en: "543,089 Photovoltaic Modules Installed, 6,064 Tracking Structures Installed, 76,140 Metal Piles Driven, Equivalent to 375 MW of mechanical installations, 254 MW of electrical installations."
     },
     description: {
       pt: `A Usina Fotovoltaica Cristino Castro é um grande marco para o setor de energia no Brasil. Nesse projeto, a Carvalho se destacou na produção unida à qualidade e segurança: 76.140 estacas cravadas, 6.064 trackers instalados e 543.089 módulos solares montados, erguemos um dos maiores empreendimentos de energia solar do Brasil. Esta infraestrutura robusta garante uma potência instalada de 381,9 MWp em corrente contínua, convertidos em 345,51 MW de energia limpa entregues à rede nacional.
