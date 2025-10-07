@@ -137,8 +137,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "550 MW",
     achievements: {
-      pt: "391.809 Módulos fotovoltaicos instalados, 4.118 trackers, 59.742 Perfis Metálicos Cravados, totalizando 376 MW de instalações mecânicas e elétricas",
-      en: "391.809 Photovoltaic Modules Installed, 4.118 Trackers Installed, 59.742 Metal Piles Driven, totaling 376 MW of mechanical and electrical installations"
+      pt: "391.809 Módulos fotovoltaicos instalados, 4.118 trackers, 59.709 perfis metálicos cravados, totalizando 376 MW de instalações mecânicas e elétricas",
+      en: "391.809 photovoltaic modules installed, 4.118 trackers installed, 59.709 metal piles driven, totaling 376 MW of mechanical and electrical installations"
     },
     description: {
       pt: "Maior complexo solar.",
