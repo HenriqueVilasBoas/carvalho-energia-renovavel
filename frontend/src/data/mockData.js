@@ -107,8 +107,8 @@ export const mockProjects = [
     },
     capacity: "765 MW",
     achievements: {
-      pt: "543.089 módulos fotovoltaicos instalados, 6.064 trackers instalados, 76.140 perfis metálicos cravados. Equivalente a 375 MW de módulos instalados, 254 MW de instalações elétricas.",
-      en: "543,089 Photovoltaic Modules Installed, 6,064 Tracking Structures Installed, 76,140 Metal Piles Driven, Equivalent to 375 MW of modules installed, 254 MW of electrical installations."
+      pt: "543.089 módulos fotovoltaicos instalados, 6.064 trackers, 76.140 perfis metálicos cravados. Equivalente a 375 MW de instalações mecânicas e 254 MW de instalações elétricas.",
+      en: "543,089 Photovoltaic Modules Installed, 6,064 Trackers Installed, 76,140 Metal Piles Driven, Equivalent to 375 MW of mechanical installations and 254 MW of electrical installations."
     },
     description: {
       pt: `A Usina Fotovoltaica Cristino Castro é um grande marco para o setor de energia no Brasil. Nesse projeto, a Carvalho se destacou na produção unida à qualidade e segurança: 76.140 estacas cravadas, 6.064 trackers instalados e 543.089 módulos solares montados, erguemos um dos maiores empreendimentos de energia solar do Brasil. Esta infraestrutura robusta garante uma potência instalada de 381,9 MWp em corrente contínua, convertidos em 345,51 MW de energia limpa entregues à rede nacional.
@@ -137,8 +137,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "550 MW",
     achievements: {
-      pt: "545.000 Módulos Fotovoltaicos instalados, 6.120 Trackers instalados, 75.400 Perfis Metálicos Cravados, totalizando 376 MW de potência",
-      en: "545,000 Photovoltaic Modules Installed, 6,120 Trackers Installed, 75,400 Metal Piles Driven, totaling 376 MW of power"
+      pt: "391.809 Módulos fotovoltaicos instalados, 4.118 trackers, 59.742 Perfis Metálicos Cravados, totalizando 376 MW de instalações mecânicas e elétricas",
+      en: "391.809 Photovoltaic Modules Installed, 4.118 Trackers Installed, 59.742 Metal Piles Driven, totaling 376 MW of mechanical and electrical installations"
     },
     description: {
       pt: "Maior complexo solar.",
@@ -203,7 +203,7 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "106 MW",
     achievements: {
-      pt: "101.400 módulos fotovoltaicos instalados, 1.200 trackers instalados, 14.250 estacas cravadas, equivalente a 70 MW de potência",
+      pt: "101.400 módulos fotovoltaicos instalados, 1.200 trackers instalados, 14.250 estacas cravadas, equivalente a 70 MW de potência instalada.",
       en: "101,400 photovoltaic modules installed, 1,200 trackers installed, 14,250 piles driven, equivalent to 70 MW of power"
     },
     description: {
@@ -225,8 +225,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "90 MW",
     achievements: {
-      pt: "130.260 módulos fotovoltaicos instalados, 1.543 trackers, totalizando 90 MW de instalações mecânicas feitas pela Carvalho",
-      en: "130,260 photovoltaic modules installed, 1,543 trackers installed, totaling 90 MW of mechanical installations by Carvalho"
+      pt: "130.260 módulos fotovoltaicos instalados, 1.543 trackers, totalizando 90 MW de instalações mecânicas feitas pela Carvalho Energia Renovável",
+      en: "130,260 photovoltaic modules installed, 1,543 trackers installed, totaling 90 MW of mechanical installations by Carvalho Carvalho Energia Renovável"
     },
     description: {
       pt: "Localizada em Dracena, São Paulo, a UFV Dracena é um marco significativo no avanço da energia solar no estado. A Carvalho Energia Renovável atuou na instalação de 90 MW de potência, equivalente a aproximadamente 1.543 trackers e 130.260 módulos fotovoltaicos, fornecendo eletricidade limpa e confiável.\n\nA participação da Carvalho no projeto incluiu a execução das atividades de cravação e montagem mecânica, garantindo eficiência, qualidade e segurança em todas as etapas.",
@@ -247,8 +247,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "406 MW",
     achievements: {
-      pt: "A Carvalho Energia Renovável atuou na execução direta de 40MW, e atuamos na gestão de cravação e montagem de 120MW. Atuamos na execução de 200 MW de Operação e Manutenção por 6 meses.",
-      en: "Carvalho Energia Renovável worked on direct execution of 40MW, andwe worked on managing piling and assembly of 120MW. We worked on execution of 200 MW of Operation and Maintenance for 6 months."
+      pt: "A Carvalho Energia Renovável atuou na montagem mecânica de 40MW, e a gestão de cravação e montagem de 120MW. Atuamos na execução de 200 MW de Operação e Manutenção por 6 meses.",
+      en: "Carvalho Energia Renovável worked on mechanical assembly of 40MW, and we worked on managing piling and assembly of 120MW. We worked on execution of 200 MW of Operation and Maintenance for 6 months."
     },
     description: {
       pt: "A Carvalho Energia Renovável atuou na gestão das atividades de cravação e montagem mecânica em um total de 120 MW, garantindo eficiência, segurança e qualidade em todas as etapas do projeto.\n\nAlém disso, a empresa foi responsável pela execução direta de cravação e montagem mecânica em 40 MW, aplicando sua expertise técnica e segurança na implementação.\n\nComplementando sua atuação, a Carvalho também realizou a execução das atividades de operação e manutenção (O&M) em 200 MW, durante um período de 6 meses, assegurando desempenho contínuo e confiável dos sistemas fotovoltaicos.",
