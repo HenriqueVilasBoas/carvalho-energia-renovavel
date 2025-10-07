@@ -137,12 +137,12 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "550 MW",
     achievements: {
-      pt: "545.000 Módulos Fotovoltaicos instalados, 6.120 Trackers instalados, 75.400 Perfis Metálicos Cravados, totalizando 376 MW de potência",
-      en: "545,000 Photovoltaic Modules Installed, 6,120 Trackers Installed, 75,400 Metal Piles Driven, totaling 376 MW of power"
+      pt: "391.809 Módulos fotovoltaicos instalados, 4.118 trackers, 59.709 perfis metálicos cravados, totalizando 376 MW de instalações mecânicas e elétricas",
+      en: "391.809 photovoltaic modules installed, 4.118 trackers installed, 59.709 metal piles driven, totaling 376 MW of mechanical and electrical installations"
     },
     description: {
-      pt: "Maior complexo solar.",
-      en: "Largest solar complex."
+      pt: "A Usina Fotovoltaica Panorama, localizada em Ribeiro Gonçalves (PI), representa um marco significativo no avanço da energia solar no Brasil. Nesse empreendimento, a Carvalho reafirmou seu compromisso com qualidade, segurança e excelência operacional. Com 391.809 módulos fotovoltaicos instalados, 4.118 trackers montados e 59.709 perfis metálicos cravados, estruturamos uma base sólida que totaliza 376 MW em instalações mecânicas e elétricas — um dos maiores projetos solares em execução no país. Essa infraestrutura de alta performance reflete a integração entre planejamento estratégico, rigor técnico e tecnologia de ponta, assegurando eficiência máxima na conversão da energia solar em eletricidade limpa. Cada metro de cabo lançado, cada componente instalado e cada etapa executada traduzem o compromisso da Carvalho com a sustentabilidade e a segurança operacional. Ao gerenciar toda a cadeia de execução da logística de materiais e fundações à montagem, instalação elétrica e entrega de uma infraestrutura plenamente operacional.",
+      en: "The Panorama Photovoltaic Plant, located in Ribeiro Gonçalves (PI), represents a significant milestone in Brazil's solar energy advancement. In this project, Carvalho reaffirmed its commitment to quality, safety, and operational excellence. With 391,809 photovoltaic modules installed, 4,118 trackers mounted, and 59,709 metal profiles driven, we structured a solid foundation totaling 376 MW in mechanical and electrical installations — one of the largest solar projects under execution in the country. This high-performance infrastructure reflects the integration between strategic planning, technical rigor, and cutting-edge technology, ensuring maximum efficiency in converting solar energy into clean electricity. Every meter of cable laid, every component installed, and every stage executed translates Carvalho's commitment to sustainability and operational safety. By managing the entire execution chain from material logistics and foundations to assembly, electrical installation, and delivery of a fully operational infrastructure."
     },
     image: pan1
   },
