@@ -105,19 +105,19 @@ export const mockProjects = [
       pt: "Cristino Castro, Piauí - 2025",
       en: "Cristino Castro, Piauí - 2025"
     },
-    capacity: "765 MW",
+    capacity: "765MWp",
     achievements: {
-      pt: "543.089 módulos fotovoltaicos instalados, 6.064 trackers instalados, 76.140 perfis metálicos cravados. Equivalente a 375 MWp de instalações mecânicas, 254 MWp de instalações elétricas.",
-      en: "543,089 Photovoltaic Modules Installed, 6,064 Tracking Structures Installed, 76,140 Metal Piles Driven, Equivalent to 375 MWp of mechanical installations, 254 MWp of electrical installations."
+      pt: "543.089 módulos fotovoltaicos instalados, 6.064 trackers instalados, 76.140 perfis metálicos cravados. Equivalente a 375MWpp de instalações mecânicas, 254MWpp de instalações elétricas.",
+      en: "543,089 Photovoltaic Modules Installed, 6,064 Tracking Structures Installed, 76,140 Metal Piles Driven, Equivalent to 375MWpp of mechanical installations, 254MWpp of electrical installations."
     },
     description: {
-      pt: `A Usina Fotovoltaica Cristino Castro é um grande marco para o setor de energia no Brasil. Nesse projeto, a Carvalho se destacou na produção unida à qualidade e segurança: 76.140 estacas cravadas, 6.064 trackers instalados e 543.089 módulos solares montados, erguemos um dos maiores empreendimentos de energia solar do Brasil. Esta infraestrutura robusta garante uma potência instalada de 381,9 MWp em corrente contínua, convertidos em 345,51 MWp de energia limpa entregues à rede nacional.
+      pt: `A Usina Fotovoltaica Cristino Castro é um grande marco para o setor de energia no Brasil. Nesse projeto, a Carvalho se destacou na produção unida à qualidade e segurança: 76.140 estacas cravadas, 6.064 trackers instalados e 543.089 módulos solares montados, erguemos um dos maiores empreendimentos de energia solar do Brasil. Esta infraestrutura robusta garante uma potência instalada de 381,9MWpp em corrente contínua, convertidos em 345,51MWpp de energia limpa entregues à rede nacional.
 
 Nossa excelência técnica é evidenciada pelo lançamento estratégico de mais de 1,5 milhão de metros de cabos nas subestações, todos concluídos e prontos para comissionamento. Este marco é resultado da sinergia entre planejamento estratégico, compromisso com os procedimentos de segurança, uso de tecnologia de ponta e a dedicação incansável de nossa equipe no aspecto operacional à visão macro do projeto.
 
 Atuamos de forma integral, gerenciando toda a cadeia de execução: desde a logística de materiais e fundações até a montagem de trackers, instalação elétrica e entrega de infraestrutura totalmente operacional. Cada etapa foi conduzida com o compromisso de transformar potencial solar em desenvolvimento sustentável, consolidando nosso papel na vanguarda da transição energética brasileira.`,
 
-      en: `In the Cristino Castro Solar Plant, our numbers tell a story of scale and precision. With over 76,000 piles driven, 6,000 trackers installed, and 543,000 solar modules assembled, we erected one of the largest solar energy projects in Brazil. This robust infrastructure ensures an installed capacity of 381.9 MWp in direct current, converted into 345.51 MWp of clean energy delivered to the national grid.
+      en: `In the Cristino Castro Solar Plant, our numbers tell a story of scale and precision. With over 76,000 piles driven, 6,000 trackers installed, and 543,000 solar modules assembled, we erected one of the largest solar energy projects in Brazil. This robust infrastructure ensures an installed capacity of 381.9MWpp in direct current, converted into 345.51MWpp of clean energy delivered to the national grid.
 Our technical excellence is demonstrated by the strategic deployment of over 1.5 million meters of cables in substations, all completed and ready for commissioning. This milestone is the result of the synergy between strategic planning, cutting-edge technology, and the relentless dedication of our team - from operational details to the macro vision of the project.
 
 We operate integrally, managing the entire execution chain: from material logistics and foundations to the assembly of trackers, electrical installation, and delivery of fully operational infrastructure. Each step was conducted with the commitment to transform solar potential into sustainable development, reinforcing our role at the forefront of the Brazilian energy transition.`
@@ -135,14 +135,14 @@ We operate integrally, managing the entire execution chain: from material logist
       pt: "Ribeiro Gonçalves, Piauí - 2024",
       en: "Ribeiro Gonçalves, Piauí - 2024"
     },
-    capacity: "550 MW",
+    capacity: "550MWp",
     achievements: {
-      pt: "391.809 Módulos fotovoltaicos instalados, 4.118 trackers, 59.709 perfis metálicos cravados, totalizando 376 MWp de instalações mecânicas e elétricas.",
-      en: "391.809 photovoltaic modules installed, 4.118 trackers installed, 59.709 metal piles driven, totaling 376 MWp of mechanical and electrical installations."
+      pt: "391.809 Módulos fotovoltaicos instalados, 4.118 trackers, 59.709 perfis metálicos cravados, totalizando 376MWpp de instalações mecânicas e elétricas.",
+      en: "391.809 photovoltaic modules installed, 4.118 trackers installed, 59.709 metal piles driven, totaling 376MWpp of mechanical and electrical installations."
     },
     description: {
-      pt: "A Usina Fotovoltaica Panorama, localizada em Ribeiro Gonçalves (PI), representa um marco significativo no avanço da energia solar no Brasil. Nesse empreendimento, a Carvalho reafirmou seu compromisso com qualidade, segurança e excelência operacional. Com 391.809 módulos fotovoltaicos instalados, 4.118 trackers montados e 59.709 perfis metálicos cravados, estruturamos uma base sólida que totaliza 376 MWp em instalações mecânicas e elétricas um dos maiores projetos solares em execução no país. Essa infraestrutura de alta performance reflete a integração entre planejamento estratégico, rigor técnico e tecnologia de ponta, assegurando eficiência máxima na conversão da energia solar em eletricidade limpa. Cada metro de cabo lançado, cada componente instalado e cada etapa executada traduzem o compromisso da Carvalho com a sustentabilidade e a segurança operacional. Ao gerenciar toda a cadeia de execução da cravação de estacas, montagem de tracker's, módulos e instalações elétricas.",
-      en: "The Panorama Photovoltaic Plant, located in Ribeiro Gonçalves (PI), represents a significant milestone in the advancement of solar energy in Brazil. In this undertaking, Carvalho reaffirmed its commitment to quality, safety, and operational excellence. With 391,809 photovoltaic modules installed, 4,118 trackers assembled, and 59,709 metal profiles driven, we structured a solid base totaling 376 MWp in mechanical and electrical installations – one of the largest solar projects under construction in the country. This high-performance infrastructure reflects the integration between strategic planning, technical rigor, and cutting-edge technology, ensuring maximum efficiency in the conversion of solar energy into clean electricity. Every meter of cable laid, every component installed, and every step executed reflects Carvalho's commitment to sustainability and operational safety. By managing the entire execution chain from pile driving and tracker assembly to module and electrical installation0s."
+      pt: "A Usina Fotovoltaica Panorama, localizada em Ribeiro Gonçalves (PI), representa um marco significativo no avanço da energia solar no Brasil. Nesse empreendimento, a Carvalho reafirmou seu compromisso com qualidade, segurança e excelência operacional. Com 391.809 módulos fotovoltaicos instalados, 4.118 trackers montados e 59.709 perfis metálicos cravados, estruturamos uma base sólida que totaliza 376MWpp em instalações mecânicas e elétricas um dos maiores projetos solares em execução no país. Essa infraestrutura de alta performance reflete a integração entre planejamento estratégico, rigor técnico e tecnologia de ponta, assegurando eficiência máxima na conversão da energia solar em eletricidade limpa. Cada metro de cabo lançado, cada componente instalado e cada etapa executada traduzem o compromisso da Carvalho com a sustentabilidade e a segurança operacional. Ao gerenciar toda a cadeia de execução da cravação de estacas, montagem de tracker's, módulos e instalações elétricas.",
+      en: "The Panorama Photovoltaic Plant, located in Ribeiro Gonçalves (PI), represents a significant milestone in the advancement of solar energy in Brazil. In this undertaking, Carvalho reaffirmed its commitment to quality, safety, and operational excellence. With 391,809 photovoltaic modules installed, 4,118 trackers assembled, and 59,709 metal profiles driven, we structured a solid base totaling 376MWpp in mechanical and electrical installations – one of the largest solar projects under construction in the country. This high-performance infrastructure reflects the integration between strategic planning, technical rigor, and cutting-edge technology, ensuring maximum efficiency in the conversion of solar energy into clean electricity. Every meter of cable laid, every component installed, and every step executed reflects Carvalho's commitment to sustainability and operational safety. By managing the entire execution chain from pile driving and tracker assembly to module and electrical installation0s."
     },
     image: pan1
   },
@@ -157,14 +157,14 @@ We operate integrally, managing the entire execution chain: from material logist
       pt: "Belmonte, Pernambuco - 2023",
       en: "Belmonte, Pernambuco - 2023"
     },
-    capacity: "570 MW",
+    capacity: "570MWp",
     achievements: {
-      pt: "570 MWp de redes elétricas instaladas. 110.000 módulos fotovoltaicos instalados, 1.303 trackers instalados, 17.000 estacas cravadas, totalizando 62.7 MWp de instalações mecânicas feitas pela Carvalho.",
-      en: "570 MWp of electrical networks installed. 110.000 photovoltaic modules installed, 1,303 trackers installed, 17.000 piles driven, totaling 62.7 MWp of mechanical installations."
+      pt: "570MWpp de redes elétricas instaladas. 110.000 módulos fotovoltaicos instalados, 1.303 trackers instalados, 17.000 estacas cravadas, totalizando 62.7MWpp de instalações mecânicas feitas pela Carvalho.",
+      en: "570MWpp of electrical networks installed. 110.000 photovoltaic modules installed, 1,303 trackers installed, 17.000 piles driven, totaling 62.7MWpp of mechanical installations."
     },
     description: {
-      pt: "A Carvalho, em colaboração com a Brazo Engenharia, participou da montagem elétrica da usina solar UFV Belmonte I & II, que soma 570 MWp de potência instalada em uma área de 1.200 hectares. A Carvalho em parceria com a Brazo Engenharia atuou na cravação e instalação de cerca de 1.303 trackers da nextracker e 110 mil módulos fotovoltaicos, o equivalente a 62.7 MW.\nEm operação plena, a usina é capaz de gerar energia limpa suficiente para atender mais de 343 mil residências pernambucanas, o que representa em torno de 10% do consumo residencial do estado. Essa produção anual de eletricidade renovável contribui evitando a emissão de aproximadamente 51,7 milhões de KG de CO₂ por ano.\nEsse volume de emissões evitadas equivale à capacidade de absorção de carbono de mais de 309 mil árvores adultas em um único ano, reforçando o impacto ambiental positivo do empreendimento e sua relevância para a transição energética no Brasil.",
-      en: "Carvalho, in collaboration with Brazo Engenharia, participated in the electrical assembly of the UFV Belmonte I & II solar plant, which totals 570 MWp of installed capacity in an area of 1,200 hectares. Carvalho, in partnership with Brazo Engenharia, worked on the piling and installation of approximately 1,303 Nextracker trackers and 110,000 photovoltaic modules, equivalent to 62.7 MW.\nIn full operation, the plant is capable of generating enough clean energy to supply more than 343,000 Pernambuco households, representing around 10% of the state's residential consumption. This annual production of renewable electricity contributes to avoiding the emission of approximately 51.7 million KG of CO₂ per year.\nThis volume of avoided emissions is equivalent to the carbon absorption capacity of more than 309,000 adult trees in a single year, reinforcing the positive environmental impact of the project and its relevance to Brazil's energy transition."
+      pt: "A Carvalho, em colaboração com a Brazo Engenharia, participou da montagem elétrica da usina solar UFV Belmonte I & II, que soma 570MWpp de potência instalada em uma área de 1.200 hectares. A Carvalho em parceria com a Brazo Engenharia atuou na cravação e instalação de cerca de 1.303 trackers da nextracker e 110 mil módulos fotovoltaicos, o equivalente a 62.7MWp.\nEm operação plena, a usina é capaz de gerar energia limpa suficiente para atender mais de 343 mil residências pernambucanas, o que representa em torno de 10% do consumo residencial do estado. Essa produção anual de eletricidade renovável contribui evitando a emissão de aproximadamente 51,7 milhões de KG de CO₂ por ano.\nEsse volume de emissões evitadas equivale à capacidade de absorção de carbono de mais de 309 mil árvores adultas em um único ano, reforçando o impacto ambiental positivo do empreendimento e sua relevância para a transição energética no Brasil.",
+      en: "Carvalho, in collaboration with Brazo Engenharia, participated in the electrical assembly of the UFV Belmonte I & II solar plant, which totals 570MWpp of installed capacity in an area of 1,200 hectares. Carvalho, in partnership with Brazo Engenharia, worked on the piling and installation of approximately 1,303 Nextracker trackers and 110,000 photovoltaic modules, equivalent to 62.7MWp.\nIn full operation, the plant is capable of generating enough clean energy to supply more than 343,000 Pernambuco households, representing around 10% of the state's residential consumption. This annual production of renewable electricity contributes to avoiding the emission of approximately 51.7 million KG of CO₂ per year.\nThis volume of avoided emissions is equivalent to the carbon absorption capacity of more than 309,000 adult trees in a single year, reinforcing the positive environmental impact of the project and its relevance to Brazil's energy transition."
     },
     image: bel1
   },
@@ -179,14 +179,14 @@ We operate integrally, managing the entire execution chain: from material logist
       pt: "São Gonçalo do Gurguéia, Piauí - 2022",
       en: "São Gonçalo do Gurguéia, Piauí - 2022"
     },
-    capacity: "864.5 MW",
+    capacity: "864.5MWp",
     achievements: {
-      pt: "A Carvalho em parceria com a Brazo Engenharia instalou 447.000 módulos fotovoltaicos, 5.400 trackers, totalizando 255 MWp de instalações mecânicas e elétricas.",
-      en: "Carvalho, in partnership with Brazo Engenharia installed 447,000 photovoltaic modules, 5,400 trackers, totaling 255 MWp of mechanical and electrical installations."
+      pt: "A Carvalho em parceria com a Brazo Engenharia instalou 447.000 módulos fotovoltaicos, 5.400 trackers, totalizando 255MWpp de instalações mecânicas e elétricas.",
+      en: "Carvalho, in partnership with Brazo Engenharia installed 447,000 photovoltaic modules, 5,400 trackers, totaling 255MWpp of mechanical and electrical installations."
     },
     description: {
-      pt: "A Carvalho em parceria com a Brazo Engenharia executou a cravação e a montagem mecânica e elétrica da usina solar UFV São Gonçalo, localizada no estado do Piauí, com 255 MWp de potência instalada. Nesse projeto nós atuamos na instalação de aproximadamente 5.400 trackers, e cerca de 447 mil módulos fotovoltaicos.\nCom sua capacidade plena, a usina é capaz de fornecer energia renovável suficiente para abastecer mais de 153 mil residências piauienses, representando uma parcela significativa do consumo de eletricidade residencial no estado.\nAlém disso, a geração limpa proporcionada pela UFV São Gonçalo evita a emissão anual de cerca de 23,1 milhões de quilos de CO₂, volume comparável à absorção de carbono de mais de 138 mil árvores adultas em um ano, reforçando seu papel na expansão da matriz energética sustentável do Brasil.",
-      en: "Carvalho, in partnership with Brazo Engenharia, executed the piling and mechanical and electrical assembly of the UFV São Gonçalo solar plant, located in the state of Piauí, with 255 MWp of installed capacity. In this project, we worked on the installation of approximately 5,400 trackers and about 447,000 photovoltaic modules.\nWith its full capacity, the plant is capable of providing enough renewable energy to supply more than 153,000 households in Piauí, representing a significant portion of residential electricity consumption in the state.\nIn addition, the clean generation provided by UFV São Gonçalo avoids the annual emission of about 23.1 million kilograms of CO₂, a volume comparable to the carbon absorption of more than 138,000 adult trees in one year, reinforcing its role in expanding Brazil's sustainable energy matrix."
+      pt: "A Carvalho em parceria com a Brazo Engenharia executou a cravação e a montagem mecânica e elétrica da usina solar UFV São Gonçalo, localizada no estado do Piauí, com 255MWpp de potência instalada. Nesse projeto nós atuamos na instalação de aproximadamente 5.400 trackers, e cerca de 447 mil módulos fotovoltaicos.\nCom sua capacidade plena, a usina é capaz de fornecer energia renovável suficiente para abastecer mais de 153 mil residências piauienses, representando uma parcela significativa do consumo de eletricidade residencial no estado.\nAlém disso, a geração limpa proporcionada pela UFV São Gonçalo evita a emissão anual de cerca de 23,1 milhões de quilos de CO₂, volume comparável à absorção de carbono de mais de 138 mil árvores adultas em um ano, reforçando seu papel na expansão da matriz energética sustentável do Brasil.",
+      en: "Carvalho, in partnership with Brazo Engenharia, executed the piling and mechanical and electrical assembly of the UFV São Gonçalo solar plant, located in the state of Piauí, with 255MWpp of installed capacity. In this project, we worked on the installation of approximately 5,400 trackers and about 447,000 photovoltaic modules.\nWith its full capacity, the plant is capable of providing enough renewable energy to supply more than 153,000 households in Piauí, representing a significant portion of residential electricity consumption in the state.\nIn addition, the clean generation provided by UFV São Gonçalo avoids the annual emission of about 23.1 million kilograms of CO₂, a volume comparable to the carbon absorption of more than 138,000 adult trees in one year, reinforcing its role in expanding Brazil's sustainable energy matrix."
     },
     image: gon1
   },
@@ -201,14 +201,14 @@ We operate integrally, managing the entire execution chain: from material logist
       pt: "Jaíba, Minas Gerais - 2020",
       en: "Jaíba, Minas Gerais - 2020"
     },
-    capacity: "106 MW",
+    capacity: "106MWp",
     achievements: {
-      pt: "101.400 módulos fotovoltaicos instalados, 1.200 trackers instalados, 14.250 estacas cravadas, equivalente a 70 MWp de instalações mecânicas.",
-      en: "101,400 photovoltaic modules installed, 1,200 trackers installed, 14,250 piles driven, equivalent to 70 MWp of electrical installations."
+      pt: "101.400 módulos fotovoltaicos instalados, 1.200 trackers instalados, 14.250 estacas cravadas, equivalente a 70MWpp de instalações mecânicas.",
+      en: "101,400 photovoltaic modules installed, 1,200 trackers installed, 14,250 piles driven, equivalent to 70MWpp of electrical installations."
     },
     description: {
-      pt: "Localizada no norte de Minas Gerais, a UFV Jaíba representa um marco importante no avanço da energia solar no estado. A Carvalho atuou na instalação de 70 MWp de potência, equivalente a aproximadamente 1.200 trackers e 101.400 módulos fotovoltaicos, fonte de eletricidade limpa e confiável.\nA participação da Carvalho no projeto incluiu a execução das atividades de cravação e montagem mecânica, garantindo eficiência, qualidade e segurança em todas as etapas. Essa infraestrutura robusta permite que a usina gere energia suficiente para suprir o consumo de dezenas de milhares de lares mineiros, ao mesmo tempo em que contribui diretamente para a sustentabilidade do meio ambiente.\nMais do que números, a UFV Jaíba reforça o compromisso com a diversificação da matriz energética brasileira, levando desenvolvimento à região e fortalecendo a transição para fontes renováveis.",
-      en: "Located in northern Minas Gerais, UFV Jaíba represents an important milestone in the advancement of solar energy in the state. Carvalho participated in the installation of 70 MWp of power, equivalent to approximately 1,200 trackers and 101,400 photovoltaic modules, a source of clean and reliable electricity.\nCarvalho's participation in the project included the execution of piling and mechanical assembly activities, ensuring efficiency, quality and safety at all stages. This robust infrastructure allows the plant to generate enough energy to supply the consumption of tens of thousands of homes in Minas Gerais, while directly contributing to environmental sustainability.\nMore than numbers, UFV Jaíba reinforces the commitment to diversifying Brazil's energy matrix, bringing development to the region and strengthening the transition to renewable sources."
+      pt: "Localizada no norte de Minas Gerais, a UFV Jaíba representa um marco importante no avanço da energia solar no estado. A Carvalho atuou na instalação de 70MWpp de potência, equivalente a aproximadamente 1.200 trackers e 101.400 módulos fotovoltaicos, fonte de eletricidade limpa e confiável.\nA participação da Carvalho no projeto incluiu a execução das atividades de cravação e montagem mecânica, garantindo eficiência, qualidade e segurança em todas as etapas. Essa infraestrutura robusta permite que a usina gere energia suficiente para suprir o consumo de dezenas de milhares de lares mineiros, ao mesmo tempo em que contribui diretamente para a sustentabilidade do meio ambiente.\nMais do que números, a UFV Jaíba reforça o compromisso com a diversificação da matriz energética brasileira, levando desenvolvimento à região e fortalecendo a transição para fontes renováveis.",
+      en: "Located in northern Minas Gerais, UFV Jaíba represents an important milestone in the advancement of solar energy in the state. Carvalho participated in the installation of 70MWpp of power, equivalent to approximately 1,200 trackers and 101,400 photovoltaic modules, a source of clean and reliable electricity.\nCarvalho's participation in the project included the execution of piling and mechanical assembly activities, ensuring efficiency, quality and safety at all stages. This robust infrastructure allows the plant to generate enough energy to supply the consumption of tens of thousands of homes in Minas Gerais, while directly contributing to environmental sustainability.\nMore than numbers, UFV Jaíba reinforces the commitment to diversifying Brazil's energy matrix, bringing development to the region and strengthening the transition to renewable sources."
     },
     image: tri1
   },
@@ -223,14 +223,14 @@ We operate integrally, managing the entire execution chain: from material logist
       pt: "Dracena, São Paulo - 2019",
       en: "Dracena, São Paulo - 2019"
     },
-    capacity: "90 MW",
+    capacity: "90MWp",
     achievements: {
-      pt: "130.260 módulos fotovoltaicos instalados, 1.543 trackers, totalizando 90 MWp de instalações mecânicas feitas pela Carvalho.",
-      en: "130,260 photovoltaic modules installed, 1,543 trackers installed, totaling 90 MWp of mechanical installations by Carvalho."
+      pt: "130.260 módulos fotovoltaicos instalados, 1.543 trackers, totalizando 90MWpp de instalações mecânicas feitas pela Carvalho.",
+      en: "130,260 photovoltaic modules installed, 1,543 trackers installed, totaling 90MWpp of mechanical installations by Carvalho."
     },
     description: {
-      pt: "Localizada em Dracena, São Paulo, a UFV Dracena é um marco significativo no avanço da energia solar no estado. A Carvalho Energia Renovável atuou na instalação de 90 MWp de potência, equivalente a aproximadamente 1.543 trackers e 130.260 módulos fotovoltaicos, fornecendo eletricidade limpa e confiável.\n\nA participação da Carvalho no projeto incluiu a execução das atividades de cravação e montagem mecânica, garantindo eficiência, qualidade e segurança em todas as etapas.",
-      en: "Located in Dracena, São Paulo, UFV Dracena is a significant milestone in the advancement of solar energy in the state. Carvalho Renewable Energy worked on the installation of 90 MWp of power, equivalent to approximately 1,543 trackers and 130,260 photovoltaic modules, providing clean and reliable electricity.\n\nCarvalho's participation in the project included the execution of piling and mechanical assembly activities, ensuring efficiency, quality and safety at all stages."
+      pt: "Localizada em Dracena, São Paulo, a UFV Dracena é um marco significativo no avanço da energia solar no estado. A Carvalho Energia Renovável atuou na instalação de 90MWpp de potência, equivalente a aproximadamente 1.543 trackers e 130.260 módulos fotovoltaicos, fornecendo eletricidade limpa e confiável.\n\nA participação da Carvalho no projeto incluiu a execução das atividades de cravação e montagem mecânica, garantindo eficiência, qualidade e segurança em todas as etapas.",
+      en: "Located in Dracena, São Paulo, UFV Dracena is a significant milestone in the advancement of solar energy in the state. Carvalho Renewable Energy worked on the installation of 90MWpp of power, equivalent to approximately 1,543 trackers and 130,260 photovoltaic modules, providing clean and reliable electricity.\n\nCarvalho's participation in the project included the execution of piling and mechanical assembly activities, ensuring efficiency, quality and safety at all stages."
     },
     image: dra1
   },
@@ -245,14 +245,14 @@ We operate integrally, managing the entire execution chain: from material logist
       pt: "Pirapora, Minas Gerais - 2018",
       en: "Pirapora, Minas Gerais - 2018"
     },
-    capacity: "406 MW",
+    capacity: "406MWp",
     achievements: {
-      pt: "A Carvalho Energia Renovável atuou na execução direta de 40MW, e atuamos na gestão de cravação e montagem de 120MW. Atuamos na execução de 200 MWp de Operação e Manutenção por 6 meses.",
-      en: "Carvalho Energia Renovável worked on direct execution of 40MW, andwe worked on managing piling and assembly of 120MW. We worked on execution of 200 MWp of Operation and Maintenance for 6 months."
+      pt: "A Carvalho Energia Renovável atuou na execução direta de 40MW, e atuamos na gestão de cravação e montagem de 120MW. Atuamos na execução de 200MWpp de Operação e Manutenção por 6 meses.",
+      en: "Carvalho Energia Renovável worked on direct execution of 40MW, andwe worked on managing piling and assembly of 120MW. We worked on execution of 200MWpp of Operation and Maintenance for 6 months."
     },
     description: {
-      pt: "A Carvalho Energia Renovável atuou na gestão das atividades de cravação e montagem mecânica em um total de 120 MW, garantindo eficiência, segurança e qualidade em todas as etapas do projeto.\n\nAlém disso, a empresa foi responsável pela execução direta de cravação e montagem mecânica em 40 MW, aplicando sua expertise técnica e segurança na implementação.\n\nComplementando sua atuação, a Carvalho também realizou a execução das atividades de operação e manutenção (O&M) em 200 MW, durante um período de 6 meses, assegurando desempenho contínuo e confiável dos sistemas fotovoltaicos.",
-      en: "Carvalho Energia Renovável worked on managing piling and mechanical assembly activities for a total of 120 MW, ensuring efficiency, safety and quality at all project stages.\n\nIn addition, the company was responsible for direct execution of piling and mechanical assembly in 40 MW, applying its technical expertise and safety in implementation.\n\nComplementing its performance, Carvalho also carried out operation and maintenance (O&M) activities in 200 MW, during a 6-month period, ensuring continuous and reliable performance of photovoltaic systems."
+      pt: "A Carvalho Energia Renovável atuou na gestão das atividades de cravação e montagem mecânica em um total de 120MWp, garantindo eficiência, segurança e qualidade em todas as etapas do projeto.\n\nAlém disso, a empresa foi responsável pela execução direta de cravação e montagem mecânica em 40MWp, aplicando sua expertise técnica e segurança na implementação.\n\nComplementando sua atuação, a Carvalho também realizou a execução das atividades de operação e manutenção (O&M) em 200MWp, durante um período de 6 meses, assegurando desempenho contínuo e confiável dos sistemas fotovoltaicos.",
+      en: "Carvalho Energia Renovável worked on managing piling and mechanical assembly activities for a total of 120MWp, ensuring efficiency, safety and quality at all project stages.\n\nIn addition, the company was responsible for direct execution of piling and mechanical assembly in 40MWp, applying its technical expertise and safety in implementation.\n\nComplementing its performance, Carvalho also carried out operation and maintenance (O&M) activities in 200MWp, during a 6-month period, ensuring continuous and reliable performance of photovoltaic systems."
     },
     image: pir1
   },
@@ -267,10 +267,10 @@ We operate integrally, managing the entire execution chain: from material logist
       pt: "Iaciara, Goiás - 2023",
       en: "Iaciara, Goiás - 2023"
     },
-    capacity: "7,20 MWp",
+    capacity: "7,20MWpp",
     achievements: {
-      pt: "7,20 MWp de potência instalada, BOP (Balance of Plant) em parceria com Brazo Engenharia, execução eficiente de instalações, montagem elétrica e civil, garantindo qualidade, segurança e confiabilidade.",
-      en: "7.20 MWp of installed capacity, BOP (Balance of Plant) in partnership with Brazo Engenharia, efficient execution of installations, electrical and civil assembly, ensuring quality, safety and reliability."
+      pt: "7,20MWpp de potência instalada, BOP (Balance of Plant) em parceria com Brazo Engenharia, execução eficiente de instalações, montagem elétrica e civil, garantindo qualidade, segurança e confiabilidade.",
+      en: "7.20MWpp of installed capacity, BOP (Balance of Plant) in partnership with Brazo Engenharia, efficient execution of installations, electrical and civil assembly, ensuring quality, safety and reliability."
     },
     description: {
       pt: "A Carvalho Energia Renovável atuou no BOP (Balance of Plant) em parceria com a Brazo Engenharia, contribuindo com execução eficiente das instalações, montagem elétrica e civil, garantindo qualidade, segurança e confiabilidade em todo o projeto.",
@@ -289,10 +289,10 @@ We operate integrally, managing the entire execution chain: from material logist
       pt: "Lagoa Santa, Minas Gerais - 2023",
       en: "Lagoa Santa, Minas Gerais - 2023"
     },
-    capacity: "7,86 MWp",
+    capacity: "7,86MWpp",
     achievements: {
-      pt: "7,86 MWp de potência instalada, BOP (Balance of Plant) em parceria com Brazo Engenharia, gestão e execução de montagem mecânica, elétrica e civil, garantindo eficiência, segurança e performance confiável.",
-      en: "7.86 MWp of installed capacity, BOP (Balance of Plant) in partnership with Brazo Engenharia, management and execution of mechanical, electrical and civil assembly, ensuring efficiency, safety and reliable performance."
+      pt: "7,86MWpp de potência instalada, BOP (Balance of Plant) em parceria com Brazo Engenharia, gestão e execução de montagem mecânica, elétrica e civil, garantindo eficiência, segurança e performance confiável.",
+      en: "7.86MWpp of installed capacity, BOP (Balance of Plant) in partnership with Brazo Engenharia, management and execution of mechanical, electrical and civil assembly, ensuring efficiency, safety and reliable performance."
     },
     description: {
       pt: "Também realizada pela MTR Solar em 2023/24, a Carvalho Energia Renovável foi responsável pelo BOP (Balance of Plant) em parceria com a Brazo Engenharia, assegurando a gestão e execução de montagem mecânica, elétrica e civil, com eficiência, segurança e performance confiável dos sistemas fotovoltaicos.",

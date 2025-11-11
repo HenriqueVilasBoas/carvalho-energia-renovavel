@@ -62,7 +62,18 @@ class StatusCheckCreate(BaseModel):
 
 
 class LikeRequest(BaseModel):
-    session_id: str
+    session_id: str = Field(..., min_length=1, max_length=200, description="Session identifier")
+    
+    @classmethod
+    def validate_session_id(cls, v):
+        """Validate and sanitize session_id"""
+        if not v or not isinstance(v, str):
+            raise ValueError("session_id must be a non-empty string")
+        # Sanitize: remove potentially dangerous characters
+        sanitized = ''.join(c for c in v if c.isalnum() or c in ['-', '_', '.'])
+        if len(sanitized) < 1 or len(sanitized) > 200:
+            raise ValueError("session_id must be between 1 and 200 characters")
+        return sanitized
 
 
 class LikeResponse(BaseModel):
@@ -74,29 +85,84 @@ class LikeResponse(BaseModel):
 class LikesCountsResponse(BaseModel):
     counts: Dict[str, int]
 
+# Health check endpoint
+@api_router.get("/health")
+async def health_check():
+    """Health check endpoint for monitoring and load balancers"""
+    try:
+        # Check database connection if available
+        db_status = "connected" if db is not None else "file_storage"
+        if db is not None:
+            await db.command("ping")
+        return {
+            "status": "healthy",
+            "database": db_status,
+            "timestamp": datetime.utcnow().isoformat()
+        }
+    except Exception as e:
+        logger.error(f"Health check failed: {str(e)}")
+        return {
+            "status": "unhealthy",
+            "error": str(e),
+            "timestamp": datetime.utcnow().isoformat()
+        }, 503
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Carvalho Energia Renovável API", "version": "1.0.0"}
 
 @api_router.post("/status", response_model=StatusCheck)
 async def create_status_check(input: StatusCheckCreate):
-    status_dict = input.dict()
+    """Create a status check entry. Requires database connection."""
+    if db is None:
+        raise HTTPException(status_code=503, detail="Database not available")
+    
+    # Validate and sanitize client_name
+    client_name = input.client_name.strip()[:100] if input.client_name else "Unknown"
+    if not client_name:
+        raise HTTPException(status_code=400, detail="client_name cannot be empty")
+    
+    status_dict = {"client_name": client_name}
     status_obj = StatusCheck(**status_dict)
-    _ = await db.status_checks.insert_one(status_obj.dict())
+    try:
+        await db.status_checks.insert_one(status_obj.dict())
+    except Exception as e:
+        logger.error(f"Failed to insert status check: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to save status check")
     return status_obj
 
 @api_router.get("/status", response_model=List[StatusCheck])
 async def get_status_checks():
-    status_checks = await db.status_checks.find().to_list(1000)
-    return [StatusCheck(**status_check) for status_check in status_checks]
+    """Get status checks. Requires database connection."""
+    if db is None:
+        raise HTTPException(status_code=503, detail="Database not available")
+    
+    try:
+        # Limit to 100 most recent entries
+        status_checks = await db.status_checks.find().sort("timestamp", -1).limit(100).to_list(100)
+        return [StatusCheck(**status_check) for status_check in status_checks]
+    except Exception as e:
+        logger.error(f"Failed to retrieve status checks: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to retrieve status checks")
 
 
 # News Likes Endpoints
 @api_router.post("/news/{news_id}/like", response_model=LikeResponse)
 async def like_news_item(news_id: int, like: LikeRequest):
-    if not like.session_id:
+    """Like a news item. Validates news_id and session_id."""
+    # Validate news_id range
+    if news_id < 1 or news_id > 10000:
+        raise HTTPException(status_code=400, detail="news_id must be between 1 and 10000")
+    
+    # Validate session_id
+    if not like.session_id or len(like.session_id.strip()) == 0:
         raise HTTPException(status_code=400, detail="session_id is required")
+    
+    # Sanitize session_id
+    sanitized_session_id = ''.join(c for c in like.session_id if c.isalnum() or c in ['-', '_', '.'])[:200]
+    if not sanitized_session_id:
+        raise HTTPException(status_code=400, detail="Invalid session_id format")
 
     if db is not None:
         likes_col = db.news_likes
@@ -104,7 +170,7 @@ async def like_news_item(news_id: int, like: LikeRequest):
         try:
             await likes_col.insert_one({
                 "news_id": news_id,
-                "session_id": like.session_id,
+                "session_id": sanitized_session_id,
                 "created_at": datetime.utcnow(),
             })
             await counts_col.update_one(
@@ -128,9 +194,9 @@ async def like_news_item(news_id: int, like: LikeRequest):
             key = str(news_id)
             entry = store.get(key, {"count": 0, "sessions": []})
             sessions = set(entry.get("sessions", []))
-            if like.session_id in sessions:
+            if sanitized_session_id in sessions:
                 return LikeResponse(news_id=news_id, count=int(entry.get("count", 0)), already_liked=True)
-            sessions.add(like.session_id)
+            sessions.add(sanitized_session_id)
             new_count = int(entry.get("count", 0)) + 1
             store[key] = {"count": new_count, "sessions": list(sessions)}
             _write_store(store)
@@ -139,14 +205,22 @@ async def like_news_item(news_id: int, like: LikeRequest):
 
 @api_router.get("/news/likes", response_model=LikesCountsResponse)
 async def get_likes_counts(ids: Optional[str] = None):
+    """Get like counts for news items. Validates and limits the number of IDs."""
     if db is not None:
         counts_col = db.news_like_counts
         query = {}
         if ids:
             try:
-                id_list = [int(x) for x in ids.split(",") if x.strip()]
-            except ValueError:
-                raise HTTPException(status_code=400, detail="ids must be integers")
+                # Limit to 100 IDs to prevent abuse
+                id_list = [int(x) for x in ids.split(",") if x.strip()][:100]
+                if not id_list:
+                    raise ValueError("No valid IDs provided")
+                # Validate ID range
+                for news_id in id_list:
+                    if news_id < 1 or news_id > 10000:
+                        raise ValueError(f"news_id {news_id} out of valid range")
+            except ValueError as e:
+                raise HTTPException(status_code=400, detail=f"Invalid ids parameter: {str(e)}")
             query = {"news_id": {"$in": id_list}}
         cursor = counts_col.find(query)
         results = await cursor.to_list(length=1000)
@@ -156,9 +230,16 @@ async def get_likes_counts(ids: Optional[str] = None):
         store = _read_store()
         if ids:
             try:
-                id_list = [int(x) for x in ids.split(",") if x.strip()]
-            except ValueError:
-                raise HTTPException(status_code=400, detail="ids must be integers")
+                # Limit to 100 IDs to prevent abuse
+                id_list = [int(x) for x in ids.split(",") if x.strip()][:100]
+                if not id_list:
+                    raise ValueError("No valid IDs provided")
+                # Validate ID range
+                for news_id in id_list:
+                    if news_id < 1 or news_id > 10000:
+                        raise ValueError(f"news_id {news_id} out of valid range")
+            except ValueError as e:
+                raise HTTPException(status_code=400, detail=f"Invalid ids parameter: {str(e)}")
             filtered = {str(i): int(store.get(str(i), {}).get("count", 0)) for i in id_list}
             return LikesCountsResponse(counts=filtered)
         counts: Dict[str, int] = {k: int(v.get("count", 0)) for k, v in store.items()}

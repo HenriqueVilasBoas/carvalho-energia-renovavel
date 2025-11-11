@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
 import { mockProjects } from "./data/mockData";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import ErrorBoundary from "./components/ErrorBoundary";
 import HomePage from "./pages/HomePage";
 import NewsPage from "./pages/NewsPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
@@ -10,20 +11,22 @@ import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
-    <div className="App">
-      <LanguageProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/ufv/:slug" element={<ProjectDetailPage />} />
-            <Route path="/noticias" element={<NewsPage />} />
-            <Route path="/noticia" element={<NewsPage />} />
-            <Route path="/contato" element={<ContactPage />} />
-            <Route path="/project/:id" element={<LegacyProjectRedirect />} />
-          </Routes>
-        </BrowserRouter>
-      </LanguageProvider>
-    </div>
+    <ErrorBoundary>
+      <div className="App">
+        <LanguageProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/ufv/:slug" element={<ProjectDetailPage />} />
+              <Route path="/noticias" element={<NewsPage />} />
+              <Route path="/noticia" element={<NewsPage />} />
+              <Route path="/contato" element={<ContactPage />} />
+              <Route path="/project/:id" element={<LegacyProjectRedirect />} />
+            </Routes>
+          </BrowserRouter>
+        </LanguageProvider>
+      </div>
+    </ErrorBoundary>
   );
 }
 

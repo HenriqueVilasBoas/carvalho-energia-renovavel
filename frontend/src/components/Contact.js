@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, Send, Phone } from 'lucide-react';
+import { MessageCircle, Send, Phone, AlertCircle } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import whatsappLogo from '../images_projetos/nossahistoria/whatsapp.png';
 
@@ -8,23 +8,96 @@ const Contact = () => {
   const [message, setMessage] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const phoneNumber = '5571992503740';
+
+  // Email validation function
+  const validateEmail = (email) => {
+    if (!email) return true; // Email is optional
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  // Sanitize input to prevent XSS
+  const sanitizeInput = (input) => {
+    return input.replace(/[<>]/g, '').trim();
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    
+    // Validate message (required)
+    if (!message.trim()) {
+      newErrors.message = language === 'pt' 
+        ? 'Por favor, digite uma mensagem.' 
+        : 'Please enter a message.';
+    } else if (message.trim().length < 10) {
+      newErrors.message = language === 'pt'
+        ? 'A mensagem deve ter pelo menos 10 caracteres.'
+        : 'Message must be at least 10 characters.';
+    }
+
+    // Validate email (optional but must be valid if provided)
+    if (email && !validateEmail(email)) {
+      newErrors.email = language === 'pt'
+        ? 'Por favor, insira um email válido.'
+        : 'Please enter a valid email address.';
+    }
+
+    // Validate name length if provided
+    if (name && name.length > 100) {
+      newErrors.name = language === 'pt'
+        ? 'O nome deve ter no máximo 100 caracteres.'
+        : 'Name must be less than 100 characters.';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
   
   const handleWhatsAppSend = () => {
-    if (!message.trim()) {
-      alert(language === 'pt' ? 'Por favor, digite uma mensagem.' : 'Please enter a message.');
+    // Clear previous errors
+    setErrors({});
+    
+    // Validate form
+    if (!validateForm()) {
       return;
     }
 
-    const fullMessage = language === 'pt' 
-      ? `Olá! Meu nome é ${name || 'Cliente'}. ${message}${email ? `\n\nEmail: ${email}` : ''}`
-      : `Hello! My name is ${name || 'Customer'}. ${message}${email ? `\n\nEmail: ${email}` : ''}`;
-    
-    const encodedMessage = encodeURIComponent(fullMessage);
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-    
-    window.open(whatsappUrl, '_blank');
+    setIsSubmitting(true);
+
+    // Sanitize inputs
+    const sanitizedName = sanitizeInput(name);
+    const sanitizedEmail = sanitizeInput(email);
+    const sanitizedMessage = sanitizeInput(message);
+
+    try {
+      const fullMessage = language === 'pt' 
+        ? `Olá! Meu nome é ${sanitizedName || 'Cliente'}. ${sanitizedMessage}${sanitizedEmail ? `\n\nEmail: ${sanitizedEmail}` : ''}`
+        : `Hello! My name is ${sanitizedName || 'Customer'}. ${sanitizedMessage}${sanitizedEmail ? `\n\nEmail: ${sanitizedEmail}` : ''}`;
+      
+      const encodedMessage = encodeURIComponent(fullMessage);
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+      
+      window.open(whatsappUrl, '_blank');
+      
+      // Reset form after successful send
+      setTimeout(() => {
+        setMessage('');
+        setName('');
+        setEmail('');
+        setIsSubmitting(false);
+      }, 500);
+    } catch (error) {
+      setErrors({ 
+        general: language === 'pt' 
+          ? 'Erro ao abrir WhatsApp. Por favor, tente novamente.' 
+          : 'Error opening WhatsApp. Please try again.' 
+      });
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -53,6 +126,13 @@ const Contact = () => {
                 </h3>
                 
                 <div className="space-y-4">
+                  {errors.general && (
+                    <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg flex items-center gap-2">
+                      <AlertCircle size={20} />
+                      <span className="text-sm">{errors.general}</span>
+                    </div>
+                  )}
+
                   <div>
                     <label className="block text-sm font-medium text-[#004534] mb-2">
                       {language === 'pt' ? 'Nome (Opcional)' : 'Name (Optional)'}
@@ -60,10 +140,19 @@ const Contact = () => {
                     <input
                       type="text"
                       value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      className="w-full px-4 py-3 border border-[#CACAFC] rounded-lg focus:ring-2 focus:ring-[#004534] focus:border-transparent"
+                      onChange={(e) => {
+                        setName(e.target.value);
+                        if (errors.name) setErrors({ ...errors, name: '' });
+                      }}
+                      maxLength={100}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#004534] focus:border-transparent ${
+                        errors.name ? 'border-red-300' : 'border-[#CACAFC]'
+                      }`}
                       placeholder={language === 'pt' ? 'Seu nome' : 'Your name'}
                     />
+                    {errors.name && (
+                      <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+                    )}
                   </div>
 
                   <div>
@@ -73,10 +162,18 @@ const Contact = () => {
                     <input
                       type="email"
                       value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      className="w-full px-4 py-3 border border-[#CACAFC] rounded-lg focus:ring-2 focus:ring-[#004534] focus:border-transparent"
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                        if (errors.email) setErrors({ ...errors, email: '' });
+                      }}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#004534] focus:border-transparent ${
+                        errors.email ? 'border-red-300' : 'border-[#CACAFC]'
+                      }`}
                       placeholder={language === 'pt' ? 'seu@email.com' : 'your@email.com'}
                     />
+                    {errors.email && (
+                      <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                    )}
                   </div>
 
                   <div>
@@ -85,23 +182,47 @@ const Contact = () => {
                     </label>
                     <textarea
                       value={message}
-                      onChange={(e) => setMessage(e.target.value)}
+                      onChange={(e) => {
+                        setMessage(e.target.value);
+                        if (errors.message) setErrors({ ...errors, message: '' });
+                      }}
                       rows={4}
-                      className="w-full px-4 py-3 border border-[#CACAFC] rounded-lg focus:ring-2 focus:ring-[#004534] focus:border-transparent resize-none"
+                      maxLength={1000}
+                      className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-[#004534] focus:border-transparent resize-none ${
+                        errors.message ? 'border-red-300' : 'border-[#CACAFC]'
+                      }`}
                       placeholder={language === 'pt' 
                         ? 'Digite sua mensagem aqui...'
                         : 'Type your message here...'
                       }
                       required
                     />
+                    <div className="flex justify-between items-center mt-1">
+                      {errors.message && (
+                        <p className="text-sm text-red-600">{errors.message}</p>
+                      )}
+                      <p className={`text-xs ml-auto ${message.length > 900 ? 'text-red-600' : 'text-gray-500'}`}>
+                        {message.length}/1000
+                      </p>
+                    </div>
                   </div>
 
                   <button
                     onClick={handleWhatsAppSend}
-                    className="w-full bg-[#25D366] hover:bg-[#20BA5A] text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
+                    disabled={isSubmitting}
+                    className="w-full bg-[#25D366] hover:bg-[#20BA5A] disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2"
                   >
-                    <img src={whatsappLogo} alt="WhatsApp" className="w-5 h-5" />
-                    {language === 'pt' ? 'Enviar via WhatsApp' : 'Send via WhatsApp'}
+                    {isSubmitting ? (
+                      <>
+                        <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        <span>{language === 'pt' ? 'Enviando...' : 'Sending...'}</span>
+                      </>
+                    ) : (
+                      <>
+                        <img src={whatsappLogo} alt="WhatsApp" className="w-5 h-5" />
+                        {language === 'pt' ? 'Enviar via WhatsApp' : 'Send via WhatsApp'}
+                      </>
+                    )}
                   </button>
                 </div>
               </div>

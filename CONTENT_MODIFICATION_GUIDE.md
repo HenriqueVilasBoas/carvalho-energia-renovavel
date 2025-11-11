@@ -50,7 +50,7 @@ This file contains almost all the text, project information, services, and news 
     pt: "São Paulo, Brasil",
     en: "São Paulo, Brazil"
   },
-  capacity: "150 MW",
+  capacity: "150MWp",
   achievements: {
     pt: "24.000 estacas cravadas, 185.000 módulos instalados",
     en: "24,000 piles driven, 185,000 modules installed"
@@ -176,7 +176,7 @@ Find:
 Look for the `stats` array and change the numbers and labels:
 ```javascript
 {
-  number: "2.750 MW",
+  number: "2.750MWp",
   label: { pt: "MW Instalados", en: "MW Installed" },
   icon: Zap
 }
