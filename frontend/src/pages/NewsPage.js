@@ -11,7 +11,7 @@ const NewsPage = () => {
   const [expanded, setExpanded] = useState({});
   const [likeCounts, setLikeCounts] = useState({});
   const [searchTerm, setSearchTerm] = useState('');
-  const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000/api';
+  const API_BASE = process.env.REACT_APP_API_BASE || 'https://carvalhoenergia.com.br/api';
 
   // Filter and search news
   const filteredNews = useMemo(() => {

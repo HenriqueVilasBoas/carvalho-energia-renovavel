@@ -9,7 +9,7 @@ const NewsSection = () => {
   const [likeCounts, setLikeCounts] = useState({});
   const { language } = useLanguage();
   const t = translations[language];
-  const API_BASE = process.env.REACT_APP_API_BASE || 'http://localhost:8000/api';
+  const API_BASE = process.env.REACT_APP_API_BASE || 'https://carvalhoenergia.com.br/api';
 
   const toggleExpanded = (newsId) => {
     setExpandedNews(prev => ({
