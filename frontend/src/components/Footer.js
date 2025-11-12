@@ -15,8 +15,8 @@ const Footer = () => {
     {
       icon: MapPin,
       text: {
-        pt: "Goiânia, GO - Brasil",
-        en: "Goiânia, GO - Brazil"
+        pt: "N° 20, Rua Coronel Pereira Lima, Centro, Trindade, GO - Brasil",
+        en: "N° 20, Rua Coronel Pereira Lima, Centro, Trindade, GO - Brazil"
       }
     },
     {

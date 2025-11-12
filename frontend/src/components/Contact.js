@@ -241,7 +241,7 @@ const Contact = () => {
                         {language === 'pt' ? 'WhatsApp' : 'WhatsApp'}
                       </h4>
                       <p className="text-[#0C6951] mb-2">
-                        +55 71 99250-3740
+                        +55 (62) 9844-4010
                       </p>
                       <p className="text-sm text-gray-600">
                         {language === 'pt' 
