@@ -159,7 +159,7 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "570 MWp",
     achievements: {
-      pt: "570 MWp de redes elétricas instaladas. 110.000 módulos fotovoltaicos instalados, 1.303 trackers instalados, 17.000 estacas cravadas, totalizando 62.7 MWp de instalações mecânicas feitas pela Carvalho.",
+      pt: "570 MWp de redes elétricas instaladas. 110.000 módulos fotovoltaicos instalados, 1.303 trackers instalados, 17.000 estacas cravadas, totalizando 62.7 MWp de instalações mecânicas.",
       en: "570 MWp of electrical networks installed. 110.000 photovoltaic modules installed, 1,303 trackers installed, 17.000 piles driven, totaling 62.7 MWp of mechanical installations."
     },
     description: {
@@ -181,8 +181,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "864.5 MWp",
     achievements: {
-      pt: "A Carvalho em parceria com a Brazo Engenharia instalou 447.000 módulos fotovoltaicos, 5.400 trackers, totalizando 255 MWp de instalações mecânicas e elétricas.",
-      en: "Carvalho, in partnership with Brazo Engenharia installed 447,000 photovoltaic modules, 5,400 trackers, totaling 255 MWp of mechanical and electrical installations."
+      pt: "447.000 módulos fotovoltaicos instalados, 5.400 trackers, totalizando 255 MWp de instalações mecânicas e elétricas.",
+      en: "447,000 photovoltaic modules installed, 5,400 trackers, totaling 255 MWp of mechanical and electrical installations."
     },
     description: {
       pt: "A Carvalho em parceria com a Brazo Engenharia executou a cravação e a montagem mecânica e elétrica da usina solar UFV São Gonçalo, localizada no estado do Piauí, com 255 MWp de potência instalada. Nesse projeto nós atuamos na instalação de aproximadamente 5.400 trackers, e cerca de 447 mil módulos fotovoltaicos.\nCom sua capacidade plena, a usina é capaz de fornecer energia renovável suficiente para abastecer mais de 153 mil residências piauienses, representando uma parcela significativa do consumo de eletricidade residencial no estado.\nAlém disso, a geração limpa proporcionada pela UFV São Gonçalo evita a emissão anual de cerca de 23,1 milhões de quilos de CO₂, volume comparável à absorção de carbono de mais de 138 mil árvores adultas em um ano, reforçando seu papel na expansão da matriz energética sustentável do Brasil.",
@@ -225,8 +225,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "90 MWp",
     achievements: {
-      pt: "130.260 módulos fotovoltaicos Jinco instalados, 1.543 trackers Arctech, totalizando 90 MWp de instalações mecânicas executadas pela Hispasol Brasil.",
-      en: "130,260 Jinco photovoltaic modules installed, 1,543 Arctech trackers installed, totaling 90 MWp of mechanical installations executed by Hispasol Brasil."
+      pt: "130.260 módulos fotovoltaicos Jinco instalados, 1.543 trackers Arctech, totalizando 90 MWp de instalações mecânicas.",
+      en: "130,260 Jinco photovoltaic modules installed, 1,543 Arctech trackers installed, totaling 90 MWp of mechanical installations."
     },
     description: {
       pt: "Localizada em Dracena, interior de São Paulo, a Usina Fotovoltaica Dracena representa um avanço estratégico na expansão da energia solar no estado. O projeto foi executado pela Hispasol Brasil, empresa do Grupo Carvalho Energia Renovável, com a instalação de 90 MWp de potência — o equivalente a cerca de 1.543 trackers Arctech e 130.260 módulos fotovoltaicos Jinco.\n\nA atuação da Hispasol Brasil envolveu a execução completa das atividades de cravação (pré-perfuração) e montagem mecânica, com foco em eficiência, qualidade e segurança em todas as etapas. Essa infraestrutura robusta contribui diretamente para o fornecimento de energia limpa e confiável, reforçando o compromisso do grupo com a sustentabilidade e a transição energética no Brasil.",
@@ -247,8 +247,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "406 MWp",
     achievements: {
-      pt: "A Hispasol Brasil atuou na gestão de cravação e montagem de 120 MWp, execução direta de 40 MWp e Operação e Manutenção de 200 MWp por 6 meses.",
-      en: "Hispasol Brasil worked on managing piling and assembly of 120 MWp, direct execution of 40 MWp and Operation and Maintenance of 200 MWp for 6 months."
+      pt: "Gestão de cravação e montagem de 120 MWp, execução direta de 40 MWp e Operação e Manutenção de 200 MWp por 6 meses.",
+      en: "Managing piling and assembly of 120 MWp, direct execution of 40 MWp and Operation and Maintenance of 200 MWp for 6 months."
     },
     description: {
       pt: "A Hispasol Brasil, empresa do Grupo Carvalho Energia Renovável, foi responsável pela execução de um conjunto de atividades estratégicas em projetos solares que somam importantes entregas para o setor.\n\nA empresa atuou na gestão das atividades de cravação e montagem mecânica em um total de 120 MWp, garantindo eficiência, segurança e qualidade em todas as etapas. Além disso, realizou diretamente a cravação e montagem mecânica em 40 MWp, aplicando sua expertise técnica e alto padrão de execução.\n\nComplementando sua atuação, a Hispasol Brasil também foi responsável pelas atividades de operação e manutenção (O&M) em 200 MWp, ao longo de um período de seis meses, assegurando o desempenho contínuo e confiável dos sistemas fotovoltaicos.",
@@ -269,8 +269,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "7,20 MWp",
     achievements: {
-      pt: "7,20 MWp de potência instalada, BOP (Balance of Plant) em parceria com Brazo Engenharia, execução eficiente de instalações, montagem elétrica e civil, garantindo qualidade, segurança e confiabilidade.",
-      en: "7.20 MWp of installed capacity, BOP (Balance of Plant) in partnership with Brazo Engenharia, efficient execution of installations, electrical and civil assembly, ensuring quality, safety and reliability."
+      pt: "7,20 MWp de potência instalada, BOP (Balance of Plant), execução eficiente de instalações, montagem elétrica e civil.",
+      en: "7.20 MWp of installed capacity, BOP (Balance of Plant), efficient execution of installations, electrical and civil assembly."
     },
     description: {
       pt: "A Carvalho Energia Renovável atuou no BOP (Balance of Plant) em parceria com a Brazo Engenharia, contribuindo com execução eficiente das instalações, montagem elétrica e civil, garantindo qualidade, segurança e confiabilidade em todo o projeto.",
@@ -291,8 +291,8 @@ We operate integrally, managing the entire execution chain: from material logist
     },
     capacity: "7,86 MWp",
     achievements: {
-      pt: "7,86 MWp de potência instalada, BOP (Balance of Plant) em parceria com Brazo Engenharia, gestão e execução de montagem mecânica, elétrica e civil, garantindo eficiência, segurança e performance confiável.",
-      en: "7.86 MWp of installed capacity, BOP (Balance of Plant) in partnership with Brazo Engenharia, management and execution of mechanical, electrical and civil assembly, ensuring efficiency, safety and reliable performance."
+      pt: "7,86 MWp de potência instalada, BOP (Balance of Plant), gestão e execução de montagem mecânica, elétrica e civil.",
+      en: "7.86 MWp of installed capacity, BOP (Balance of Plant), management and execution of mechanical, electrical and civil assembly."
     },
     description: {
       pt: "A Carvalho Energia Renovável atuou no BOP (Balance of Plant) em parceria com a Brazo Engenharia, contribuindo com execução eficiente das instalações, montagem elétrica e civil, garantindo qualidade, segurança e confiabilidade em todo o projeto.",
